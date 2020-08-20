@@ -6,6 +6,17 @@ body {
 	font-smoothing: antialiased;
 }
 
+/* body {
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Sans-serif';
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
 h1,
 h2,
 h3,
@@ -127,10 +138,10 @@ ol {
 	color: #323232;
 	line-height: normal;
 	cursor: pointer;
-	background-color: transparent;
-	background-image: url("../img/angle-rignt.png");
+	/* background-color: transparent; */
+	/* background-image: url("../img/angle-rignt.png"); */
 	background-repeat: no-repeat;
-	background-position: right 23px top 22px;
+	background-position: center 23px top 22px;
 }
 
 .site-btn:hover {
@@ -140,13 +151,13 @@ ol {
 .site-btn.sb-light {
 	color: #fff;
 	border-color: #fff;
-	background-image: url("../img/angle-rignt-w.png");
+	/* background-image: url("../img/angle-rignt-w.png"); */
 }
 
 .site-btn.sb-solid-dark {
 	color: #fff;
 	background-color: #323232;
-	background-image: url("../img/angle-rignt-w.png");
+	/* background-image: url("../img/angle-rignt-w.png"); */
 }
 
 /* Preloder */
@@ -158,7 +169,7 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: #FFF;
 }
 
 .loader {
@@ -178,13 +189,19 @@ ol {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #000000;
+		border-left-color: transparent;
+	}
+	25% {
+		-webkit-transform: rotate(100deg);
+		transform: rotate(100deg);
+		border: 4px solid #000000;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #220af8;
 		border-left-color: transparent;
 	}
 	100% {
@@ -198,12 +215,19 @@ ol {
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #000000;
+		border-left-color: transparent;
+	}
+	25% {
+		-webkit-transform: rotate(100deg);
+		transform: rotate(100deg);
+		border: 4px solid #000000;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		transform: rotate(180deg);
+		border: 4px solid #220af8;
 		border-left-color: transparent;
 	}
 	100% {
@@ -332,11 +356,12 @@ ol {
 
 .header-section {
 	position: fixed;
-	width: 455px;
+	width: 355px;
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #fff;
+	/* background: #fff; */
+	background: #ffffff;
 	z-index: 9999;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -390,7 +415,7 @@ ol {
 }
 
 .main-menu li.active a {
-	border-bottom: 2px solid #000000;
+	border-bottom: 2px solid #ff0000;
 }
 
 .social-links-warp {
@@ -1617,4 +1642,111 @@ ol {
 	  width: 100%;
 	}
   }
+
+  .card {
+	margin: 2rem;
+	width: 350px;
+	height: 590px;
+	padding: .5rem 1rem;
+	background-color: #f9f9f9;
+	border-radius: 20px;
+	box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: .2s;
+  }
+  .card:hover {
+	transform: translateY(-5px);
+  }
+  .card .title {
+	color: white;
+	margin: 1rem;
+	padding: .5rem 1rem;
+	border-radius: 50px;
+	transition: .2s;
+	cursor: pointer;
+  }
+  .card .title--owner {
+	background-color: #ea00ff;
+  }
+  .card .title--owner:hover {
+	box-shadow: 0 0 12px rgb(255, 49, 245);
+  }
+  .card .title--epic {
+	background-color: #00aeff;
+  }
+  .card .title--epic:hover {
+	box-shadow: 0 0 12px rgba(71, 187, 241, 0.8);
+  }
+  .card .title--legendary {
+	background-color: #ff9100;
+  }
+  .card .title--legendary:hover {
+	box-shadow: 0 0 12px rgb(248, 92, 2);
+  }
+  .card .desc {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  .card .actions {
+	width: 100%;
+	margin-top: 20px;
+	position: center;
+	display: grid;
+	text-justify: center;
+	grid-template-columns: repeat(3, 1fr);
+  }
+  .card .actions button, a {
+	padding: .5rem .8rem;
+	margin-left: 12px;
+	display: center;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+	outline: 0;
+	transition: background-color .4s, color .4s, transform .1s;
+  }
+  .card .actions button:hover, a:hover {
+	color: white;
+	box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  }
+  .card .actions button:active, a:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  }
+  .card .actions__like:hover {
+	background-color: #686565;
+  }
+  .card .actions__trade:hover {
+	background-color: #686565;
+  }
+  .card .actions__cancel:hover {
+	background-color: #686565;
+  }
   
+  p {
+	margin-top: 1rem;
+	color: #484848;
+  }
+  
+  .container {
+	display: flex;
+	margin-top: 60px;
+  }
+
+  a:link,
+  a:visited {
+	text-decoration: none;
+	color: #000000;
+  }
+  
+  .active {
+	background-color: #ffffff;
+  }
+  
+  button::-moz-focus-inner {
+	border: 0;
+  }
