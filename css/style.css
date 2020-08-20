@@ -1674,6 +1674,12 @@ ol {
   .card .title--servicer:hover {
 	box-shadow: 0 0 20px rgb(255, 49, 245);
   }
+  .card .title--legendary {
+	background-color: #00ffb3;
+  }
+  .card .title--legendary:hover {
+	box-shadow: 0 0 20px rgba(54, 255, 222, 0.8);
+  }
   .card .title--epic {
 	background-color: #ff0000;
   }
