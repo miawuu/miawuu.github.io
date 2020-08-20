@@ -1672,35 +1672,35 @@ ol {
 	background-color: #ea00ff;
   }
   .card .title--owner:hover {
-	box-shadow: 0 0 12px rgb(255, 49, 245);
+	box-shadow: 0 0 20px rgb(255, 49, 245);
   }
   .card .title--epic {
 	background-color: #00aeff;
   }
   .card .title--epic:hover {
-	box-shadow: 0 0 12px rgba(71, 187, 241, 0.8);
+	box-shadow: 0 0 20px rgba(0, 174, 255, 0.8);
   }
   .card .title--legendary {
 	background-color: #ff9100;
   }
   .card .title--legendary:hover {
-	box-shadow: 0 0 12px rgb(248, 92, 2);
+	box-shadow: 0 0 20px rgb(248, 92, 2);
   }
   .card .desc {
 	text-align: center;
 	margin-bottom: 20px;
   }
   .card .actions {
-	width: 100%;
+	/* width: 100%; */
 	margin-top: 20px;
-	position: center;
+	position: relative;
 	display: grid;
 	text-justify: center;
 	grid-template-columns: repeat(3, 1fr);
   }
   .card .actions button, a {
 	padding: .5rem .8rem;
-	margin-left: 12px;
+	/* margin-left: 12px; */
 	display: center;
 	cursor: pointer;
 	background-color: transparent;
@@ -1733,7 +1733,7 @@ ol {
   }
   
   .container {
-	display: flex;
+	display: inline;
 	margin-top: 60px;
   }
 
