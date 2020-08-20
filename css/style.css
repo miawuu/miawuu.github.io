@@ -145,7 +145,7 @@ ol {
 }
 
 .site-btn:hover {
-	color: #323232;
+	color: #ffffff;
 }
 
 .site-btn.sb-light {
@@ -726,7 +726,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #323232;
+	background: #ffffff;
 	display: -ms-flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1722,15 +1722,6 @@ ol {
   .card .actions button:active, a:active {
 	transform: scale(0.95);
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
-  }
-  .card .actions__like:hover {
-	background-color: #686565;
-  }
-  .card .actions__trade:hover {
-	background-color: #686565;
-  }
-  .card .actions__cancel:hover {
-	background-color: #686565;
   }
   
   p {
