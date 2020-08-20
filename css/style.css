@@ -1668,23 +1668,23 @@ ol {
 	transition: .2s;
 	cursor: pointer;
   }
-  .card .title--owner {
+  .card .title--servicer {
 	background-color: #ea00ff;
   }
-  .card .title--owner:hover {
+  .card .title--servicer:hover {
 	box-shadow: 0 0 20px rgb(255, 49, 245);
   }
   .card .title--epic {
-	background-color: #00aeff;
+	background-color: #ff0000;
   }
   .card .title--epic:hover {
-	box-shadow: 0 0 20px rgba(0, 174, 255, 0.8);
+	box-shadow: 0 0 20px rgba(255, 61, 61, 0.8);
   }
-  .card .title--legendary {
-	background-color: #ff9100;
+  .card .title--owner {
+	background-color: #9900ff;
   }
-  .card .title--legendary:hover {
-	box-shadow: 0 0 20px rgb(248, 92, 2);
+  .card .title--owner:hover {
+	box-shadow: 0 0 20px rgb(191, 28, 255);
   }
   .card .desc {
 	text-align: center;
