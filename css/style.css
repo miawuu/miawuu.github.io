@@ -158,7 +158,7 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: #FFF;
 }
 
 .loader {
@@ -178,13 +178,19 @@ ol {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #000000;
+		border-left-color: transparent;
+	}
+	25% {
+		-webkit-transform: rotate(100deg);
+		transform: rotate(100deg);
+		border: 4px solid #000000;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #220af8;
 		border-left-color: transparent;
 	}
 	100% {
@@ -198,12 +204,19 @@ ol {
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #000000;
+		border-left-color: transparent;
+	}
+	25% {
+		-webkit-transform: rotate(100deg);
+		transform: rotate(100deg);
+		border: 4px solid #000000;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		transform: rotate(180deg);
+		border: 4px solid #220af8;
 		border-left-color: transparent;
 	}
 	100% {
