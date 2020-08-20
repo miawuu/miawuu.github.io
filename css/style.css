@@ -1733,7 +1733,7 @@ ol {
   }
   
   .container {
-	display: inline;
+	display: flex;
 	margin-top: 60px;
   }
 
