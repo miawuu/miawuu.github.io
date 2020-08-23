@@ -6,6 +6,17 @@ body {
 	font-smoothing: antialiased;
 }
 
+/* body {
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Sans-serif';
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
 h1,
 h2,
 h3,
@@ -127,26 +138,26 @@ ol {
 	color: #323232;
 	line-height: normal;
 	cursor: pointer;
-	background-color: transparent;
-	background-image: url("../img/angle-rignt.png");
+	/* background-color: transparent; */
+	/* background-image: url("../img/angle-rignt.png"); */
 	background-repeat: no-repeat;
-	background-position: right 23px top 22px;
+	background-position: center 23px top 22px;
 }
 
 .site-btn:hover {
-	color: #323232;
+	color: #ffffff;
 }
 
 .site-btn.sb-light {
 	color: #fff;
 	border-color: #fff;
-	background-image: url("../img/angle-rignt-w.png");
+	/* background-image: url("../img/angle-rignt-w.png"); */
 }
 
 .site-btn.sb-solid-dark {
 	color: #fff;
 	background-color: #323232;
-	background-image: url("../img/angle-rignt-w.png");
+	/* background-image: url("../img/angle-rignt-w.png"); */
 }
 
 /* Preloder */
@@ -345,11 +356,12 @@ ol {
 
 .header-section {
 	position: fixed;
-	width: 455px;
+	width: 355px;
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #fff;
+	/* background: #fff; */
+	background: #ffffff;
 	z-index: 9999;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -403,7 +415,7 @@ ol {
 }
 
 .main-menu li.active a {
-	border-bottom: 2px solid #000000;
+	border-bottom: 2px solid #ff0000;
 }
 
 .social-links-warp {
@@ -714,7 +726,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #323232;
+	background: #ffffff;
 	display: -ms-flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1630,4 +1642,108 @@ ol {
 	  width: 100%;
 	}
   }
+
+  .card {
+	margin: 2rem;
+	width: 350px;
+	height: 400px;
+	padding: .5rem 1rem;
+	background-color: #f9f9f9;
+	border-radius: 20px;
+	box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: .2s;
+  }
+  .card:hover {
+	transform: translateY(-5px);
+  }
+  .card .title {
+	color: white;
+	margin: 1rem;
+	padding: .5rem 1rem;
+	border-radius: 50px;
+	transition: .2s;
+	cursor: pointer;
+  }
+  .card .title--servicer {
+	background-color: #ea00ff;
+  }
+  .card .title--servicer:hover {
+	box-shadow: 0 0 20px rgb(255, 49, 245);
+  }
+  .card .title--legendary {
+	background-color: #00ffb3;
+  }
+  .card .title--legendary:hover {
+	box-shadow: 0 0 20px rgba(54, 255, 222, 0.8);
+  }
+  .card .title--epic {
+	background-color: #ff0000;
+  }
+  .card .title--epic:hover {
+	box-shadow: 0 0 20px rgba(255, 61, 61, 0.8);
+  }
+  .card .title--owner {
+	background-color: #9900ff;
+  }
+  .card .title--owner:hover {
+	box-shadow: 0 0 20px rgb(191, 28, 255);
+  }
+  .card .desc {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  .card .actions {
+	/* width: 100%; */
+	margin-top: 20px;
+	position: relative;
+	display: grid;
+	text-justify: center;
+	grid-template-columns: repeat(3, 1fr);
+  }
+  .card .actions button, a {
+	padding: .5rem .8rem;
+	/* margin-left: 12px; */
+	display: center;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+	outline: 0;
+	transition: background-color .4s, color .4s, transform .1s;
+  }
+  .card .actions button:hover, a:hover {
+	color: white;
+	box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  }
+  .card .actions button:active, a:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  }
   
+  p {
+	margin-top: 1rem;
+	color: #484848;
+  }
+  
+  .container {
+	display: flex;
+	margin-top: 60px;
+  }
+
+  a:link,
+  a:visited {
+	text-decoration: none;
+	color: #000000;
+  }
+  
+  .active {
+	background-color: #ffffff;
+  }
+  
+  button::-moz-focus-inner {
+	border: 0;
+  }
