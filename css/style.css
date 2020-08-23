@@ -903,9 +903,9 @@ ol {
 
 .blog-post .post-date {
 	display: inline-block;
-	width: 89px;
+	width: 65px;
 	text-align: center;
-	background: #f7f9fb;
+	background: #000000;
 	padding: 14px 0;
 }
 
@@ -922,8 +922,7 @@ ol {
 }
 
 .blog-post .post-title {
-	font-size: 48px;
-	margin-bottom: 20px;
+	font-size: 40px;
 }
 
 .blog-post .post-metas {
