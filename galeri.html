@@ -63,6 +63,7 @@
 		<div class="page-section gallery-page">
 			<ul class="portfolio-filter">
 				<li class="filter all active" data-filter="*">Semua</li>
+				<li class="filter" data-filter=".fs-event">First Event</li>
 				<li class="filter" data-filter=".17an">17-an</li>
 				<li class="filter" data-filter=".logo">Logo</li>
 			</ul>
@@ -76,56 +77,91 @@
 				<div class="gallery-item logo">
 					<img src="img/miawu-id.png" alt="">
 					<div class="hover-links">
-						<h2>Miawu Logo</h2>
+						<center><h3>Miawu Logo - with Flag</h3></center>
+					</div>
+				</div>
+				<div class="gallery-item fs-event">
+					<img src="img/fs-event-camp-1.png" alt="">
+					<div class="hover-links">
+						<p>Camp - 1</p>
+					</div>
+				</div>
+				<div class="gallery-item fs-event">
+					<img src="img/fs-event-camp-2.png" alt="">
+					<div class="hover-links">
+						<p>Camp - 2</p>
+					</div>
+				</div>
+				<div class="gallery-item fs-event">
+					<img src="img/lomba-racing-burlas.png" alt="">
+					<div class="hover-links">
+						<p>First Event - Racing</p>
+					</div>
+				</div>
+				<div class="gallery-item fs-event">
+					<img src="img/fs-event-racing-win.png" alt="">
+					<div class="hover-links">
+						<center><p>First Event - Racing Winner<br><font color="red">Shoukouu</font></p></center>
+					</div>
+				</div>
+				<div class="gallery-item fs-event">
+					<img src="img/fs-event-tanyajawab.png" alt="">
+					<div class="hover-links">
+						<center><p>First Event - Tanya Jawab</p></center>
+					</div>
+				</div>
+				<div class="gallery-item fs-event">
+					<img src="img/fs-event-survivor.png" alt="">
+					<div class="hover-links">
+						<center><p>First Event - Survivor</p></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-1.png" alt="">
 					<div class="hover-links">
-						<!-- <a href="./event-list.html#onetime#8401" class="site-btn sb-light">Visit</a> -->
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Onetime#8401</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Onetime#8401</p></font></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-2.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Verox1#0000</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Verox1#0000</p></font></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-3.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Imnoob#5424</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Imnoob#5424</p></font></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-4.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Daniimuts#0000</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Daniimuts#0000</p></font></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-5.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Adamjuz#9960</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Adamjuz#9960</p></font></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-6.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Angelmnzz#3256</p></font>
-					</div>>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Angelmnzz#3256</p></font></center>
+					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-7.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Spieky#0000</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Spieky#0000</p></font></center>
 					</div>
 				</div>
 				<div class="gallery-item 17an">
 					<img src="img/lomba-gambar-8.png" alt="">
 					<div class="hover-links">
-						<p>Lomba Menggambar dengan Surat, <br>By <font color="red">Yama#2676</p></font>
+						<center><p>17an -  Menggambar dengan Surat, <br>By <font color="red">Yama#2676</p></font></center>
 					</div>
 				</div>
 			</div>
@@ -143,6 +179,14 @@
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		// When the user clicks on div, open the popup
+		function myFunction() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show");
+		}
+	</script>
 
 	</body>
 </html>
