@@ -323,33 +323,6 @@ ol {
 	width: 100%;
 }
 
-.search-moderl-form {
-	padding: 0 15px;
-}
-
-.search-moderl-form input {
-	width: 500px;
-	font-size: 40px;
-	border: none;
-	border-bottom: 2px solid #333;
-	background: none;
-	color: #999;
-}
-
-.search-close-switch {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background: #333;
-	color: #fff;
-	text-align: center;
-	border-radius: 50%;
-	padding-top: 7px;
-	font-size: 21px;
-	top: 30px;
-	cursor: pointer;
-}
-
 /*------------------
   Header section
 ---------------------*/
@@ -416,67 +389,6 @@ ol {
 
 .main-menu li.active a {
 	border-bottom: 2px solid #ff0000;
-}
-
-.social-links-warp {
-	padding-left: 63px;
-}
-
-.social-links {
-	width: 40px;
-}
-
-.social-links a {
-	font-size: 14px;
-	display: block;
-	color: #c6d7d8;
-	margin-bottom: 29px;
-	-webkit-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	-webkit-transform-origin: top left;
-	-ms-transform-origin: top left;
-	transform-origin: top left;
-}
-
-.social-text {
-	font-size: 14px;
-	font-weight: 700;
-	color: #323232;
-	text-transform: uppercase;
-	width: 215px;
-	position: relative;
-	-webkit-transform: rotate(-90deg) translateX(-200px);
-	-ms-transform: rotate(-90deg) translateX(-200px);
-	transform: rotate(-90deg) translateX(-200px);
-	-webkit-transform-origin: top left;
-	-ms-transform-origin: top left;
-	transform-origin: top left;
-}
-
-.social-text:after {
-	position: absolute;
-	content: "";
-	width: 101px;
-	height: 2px;
-	right: 0;
-	top: calc(50% - 1px);
-	background: #000;
-}
-
-.copyright {
-	position: fixed;
-	height: 45px;
-	width: 455px;
-	left: 0;
-	bottom: 0;
-	background: #fff;
-	padding-left: 63px;
-	padding-top: 20px;
-	font-size: 10px;
-	font-weight: 700;
-	color: #c6d7d8;
-	text-transform: uppercase;
 }
 
 .page-section {
@@ -1561,79 +1473,6 @@ ol {
 		padding: 100px 15px 0;
 	}
 }
-
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-	text-align: center;
-	color: #ccc;
-	padding: 10px 0;
-	height: 150px;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption {
-	animation-name: zoom;
-	animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-	from {transform:scale(0)}
-	to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	color: #f1f1f1;
-	font-size: 40px;
-	font-weight: bold;
-	transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
-  }
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
@@ -1644,12 +1483,12 @@ ol {
 
   .card {
     margin: 3rem;
-	width: 350px;
-	height:400px;
+	width: 450px;
+	height: 450px;
 	padding: .5rem 1rem;
 	background-color: #f9f9f9;
 	border-radius: 20px;
-	box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 12px 32px 4px rgba(255, 0, 0, 0.2);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1736,7 +1575,7 @@ ol {
   }
   
   .container {
-	display: flex;
+	display: relative;
 	margin-top: 60px;
   }
 
@@ -1752,4 +1591,88 @@ ol {
   
   button::-moz-focus-inner {
 	border: 0;
+  }
+
+  .dialog__trigger, .dialog__action {
+	border: 3px solid #333333;
+	background: #f1f1f1;
+	padding: 15px 20px;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	display: block;
+	-webkit-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+	-webkit-transform: translateY(0px);
+			transform: translateY(0px);
+  }
+  .dialog__trigger:hover, .dialog__trigger:focus, .dialog__action:hover, .dialog__action:focus {
+	outline: 0;
+	-webkit-transform: translateY(-5px);
+			transform: translateY(-5px);
+	-webkit-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+	box-shadow: 0 5px 10px rgba(51, 51, 51, 0.4);
+  }
+  .dialog__trigger:active, .dialog__action:active {
+	-webkit-transform: translateY(-3px);
+			transform: translateY(-3px);
+  }
+  
+  .dialog {
+	background: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* left: calc(50% - 35%); */
+	top: 0;
+	padding: 30px;
+	/* box-shadow: 0 10px 30px rgba(51, 51, 51, 0.4); */
+	border: 3px solid #333333;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 180ms ease-in;
+	transition: all 180ms ease-in;
+  }
+  @media (max-width: 600px) {
+	.dialog {
+	  width: 90%;
+	  left: calc(50% - 45%);
+	}
+  }
+  .dialog.dialog--active {
+	top: 10%;
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: all 250ms ease-out;
+	transition: all 250ms ease-out;
+  }
+  .dialog .dialog__close {
+	font-size: 2rem;
+	line-height: 2rem;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+	padding: 15px;
+	-webkit-transition: color 150ms ease;
+	transition: color 150ms ease;
+  }
+  .dialog .dialog__close:hover {
+	color: #00ff00;
+  }
+  .dialog .dialog__title {
+	font-size: 23px;
+	font-family: 'Slabo 27px', serif;
+	font-weight: 100;
+	margin: 0;
+	padding: 0 0 15px 0;
+	border-bottom: 2px solid #333333;
+  }
+  .dialog .dialog__content {
+	font-size: 1.1rem;
+	line-height: 2rem;
+  }
+  .dialog .dialog__action {
+	margin: 0;
+	font-size: 1rem;
   }

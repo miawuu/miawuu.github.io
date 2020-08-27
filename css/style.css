@@ -1799,3 +1799,34 @@ ol {
 	from {opacity: 0;}
 	to {opacity:1 ;}
   }
+
+.carousel-caption {
+    width: 100%;
+    height: 100%;
+    left: 0 !important;
+}
+
+.carousel-caption h3 {
+  text-align:left;
+  margin-left:30px;
+}
+.carousel-caption p {
+  margin-top:40%;
+}
+@media screen and (max-width: 479px) {
+  .carousel-caption p {
+    margin-top:20%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 640px){
+  .carousel-caption p {
+    margin-top:30%;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .carousel-caption p {
+    margin-top:40%;
+  }
+}
