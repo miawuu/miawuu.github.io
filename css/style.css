@@ -1645,9 +1645,10 @@ ol {
   .card {
 	/* margin: 2rem; */
 	width: 350px;
-	height: 400px;
+	height: 450px;
+	margin-top: 20px;
 	padding: .5rem 1rem;
-	background-color: #f9f9f9;
+	background-color: #beb9b9;
 	border-radius: 30px;
 	box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
 	display: flex;
