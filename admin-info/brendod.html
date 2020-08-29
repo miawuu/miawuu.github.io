@@ -11,6 +11,32 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgb(255, 255, 255);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.size_of_img{
+width:90px}
+
 .fa:hover {
     opacity: 0.7;
 }
@@ -65,64 +91,104 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-award fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Badges</h2>
         <div class="w3-container">
             <h3>Total : 58</h3>
-            <img src="https://cheese.formice.com/img/badges/0.png" alt="0" />
-            <img src="https://cheese.formice.com/img/badges/1.png" alt="1" />
-            <img src="https://cheese.formice.com/img/badges/257.png" alt="257" />
-            <img src="https://cheese.formice.com/img/badges/129.png" alt="129" />
-            <img src="https://cheese.formice.com/img/badges/261.png" alt="261" />
-            <img src="https://cheese.formice.com/img/badges/6.png" alt="6" />
-            <img src="https://cheese.formice.com/img/badges/7.png" alt="7"/>
-            <img src="https://cheese.formice.com/img/badges/8.png" alt="8" />
-            <img src="https://cheese.formice.com/img/badges/136.png" alt="136" />
-            <img src="https://cheese.formice.com/img/badges/264.png" alt="264" />
-            <img src="https://cheese.formice.com/img/badges/9.png" alt="9" />
-            <img src="https://cheese.formice.com/img/badges/10.png" alt="10" />
-            <img src="https://cheese.formice.com/img/badges/11.png" alt="11" />
-            <img src="https://cheese.formice.com/img/badges/13.png" alt="13" />
-            <img src="https://cheese.formice.com/img/badges/269.png" alt="269" />
-            <img src="https://cheese.formice.com/img/badges/14.png" alt="14" />
-            <img src="https://cheese.formice.com/img/badges/16.png" alt="16" />
-            <img src="https://cheese.formice.com/img/badges/17.png" alt="17" />
-            <img src="https://cheese.formice.com/img/badges/145.png" alt="145" />
-            <img src="https://cheese.formice.com/img/badges/273.png" alt="273" />
-            <img src="https://cheese.formice.com/img/badges/18.png" alt="18" />
-            <img src="https://cheese.formice.com/img/badges/19.png" alt="19" />
-            <img src="https://cheese.formice.com/img/badges/20.png" alt="20" />
-            <img src="https://cheese.formice.com/img/badges/276.png" alt="276" />
-            <img src="https://cheese.formice.com/img/badges/21.png" alt="21" />
-            <img src="https://cheese.formice.com/img/badges/277.png" alt="277" />
-            <img src="https://cheese.formice.com/img/badges/22.png" alt="22" />
-            <img src="https://cheese.formice.com/img/badges/23.png" alt="23" />
-            <img src="https://cheese.formice.com/img/badges/29.png" alt="29" />
-            <img src="https://cheese.formice.com/img/badges/30.png" alt="30" />
-            <img src="https://cheese.formice.com/img/badges/158.png" alt="158" />
-            <img src="https://cheese.formice.com/img/badges/32.png" alt="32" />
-            <img src="https://cheese.formice.com/img/badges/33.png" alt="33" />
-            <img src="https://cheese.formice.com/img/badges/34.png" alt="34" />
-            <img src="https://cheese.formice.com/img/badges/35.png" alt="35" />
-            <img src="https://cheese.formice.com/img/badges/163.png" alt="163" />
-            <img src="https://cheese.formice.com/img/badges/36.png" alt="36" />
-            <img src="https://cheese.formice.com/img/badges/40.png" alt="40" />
-            <img src="https://cheese.formice.com/img/badges/42.png" alt="42" />
-            <img src="https://cheese.formice.com/img/badges/43.png" alt="43" />
-            <img src="https://cheese.formice.com/img/badges/44.png" alt="44" />
-            <img src="https://cheese.formice.com/img/badges/46.png" alt="46" />
-            <img src="https://cheese.formice.com/img/badges/174.png" alt="174" />
-            <img src="https://cheese.formice.com/img/badges/49.png" alt="49" />
-            <img src="https://cheese.formice.com/img/badges/52.png" alt="52" />
-            <img src="https://cheese.formice.com/img/badges/54.png" alt="54" />
-            <img src="https://cheese.formice.com/img/badges/184.png" alt="184" />
-            <img src="https://cheese.formice.com/img/badges/60.png" alt="60" />
-            <img src="https://cheese.formice.com/img/badges/193.png" alt="193" />
-            <img src="https://cheese.formice.com/img/badges/68.png" alt="68" />
-            <img src="https://cheese.formice.com/img/badges/202.png" alt="202" />
-            <img src="https://cheese.formice.com/img/badges/205.png" alt="205" />
-            <img src="https://cheese.formice.com/img/badges/209.png" alt="209" />
-            <img src="https://cheese.formice.com/img/badges/230.png" alt="230" />
-            <img src="https://cheese.formice.com/img/badges/236.png" alt="236" />
-            <img src="https://cheese.formice.com/img/badges/240.png" alt="240" />
-            <img src="https://cheese.formice.com/img/badges/124.png" alt="124" />
-            <img src="https://cheese.formice.com/img/badges/255.png" alt="124" />
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/0.png" alt="0" /><span class="tooltiptext">Events: Carnival - 	2014</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/1.png" alt="1" /><span class="tooltiptext">Events: Carnival - 	2014</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/257.png" alt="272" /><span class="tooltiptext">Adventure: Chaostmas 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/129.png" alt="129" /><span class="tooltiptext">Adventure: Hugging 2016 • 2017</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/261.png" alt="261" /><span class="tooltiptext">Adventure: Valentine's Day 2020</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/6.png" alt="6" /><span class="tooltiptext">Easter: 2014 • 2016 • Indiana Mouse</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/7.png" alt="7" /><span class="tooltiptext">Easter: 2014 • 2016 • Saint Patrick's Day 2018 • Saint Patrick's Day 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/8.png" alt="8" /><span class="tooltiptext">Fur: Easter Bunny</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/136.png" alt="136" /><span class="tooltiptext">Fur: Red hearted raccoon</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/264.png" alt="264" /><span class="tooltiptext">Adventure: Saint Patrick's Day 2020</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/9.png" alt="9" /><span class="tooltiptext">Obtaining: Transformice 4th Anniversary Enigma</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/10.png" alt="10" /><span class="tooltiptext">Fur: Panda</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/11.png" alt="11" /><span class="tooltiptext">Fur: Brown and white</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/13.png" alt="13" /><span class="tooltiptext">Fur: Egyptian</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/269.png" alt="269" /><span class="tooltiptext">Obtaining: wearing the mustache on the Village</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/14.png" alt="14" /><span class="tooltiptext">Fur: World Cup fur</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/16.png" alt="16" /><span class="tooltiptext">Fishing: 2014 • 2015 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/17.png" alt="17" /><span class="tooltiptext">Fishing: 2014 • 2015 • Pirate 2016 • 2017 • Indiana Mouse</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/145.png" alt="145" /><span class="tooltiptext">NPC: Oracle</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/273.png" alt="273" /><span class="tooltiptext">Fur: Leopard gecko</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/18.png" alt="18" /><span class="tooltiptext">Fishing: 2014 • 2015 • 2016 • 2017 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/19.png" alt="19" /><span class="tooltiptext">Fur: Wolf</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/20.png" alt="20" /><span class="tooltiptext">Fur: Cloud</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/276.png" alt="276" /><span class="tooltiptext">Adventure: Fishing 2020</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/21.png" alt="21" /><span class="tooltiptext">Fur: Snow leopard</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/277.png" alt="277" /><span class="tooltiptext">Fur: Kitsune</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/22.png" alt="22" /><span class="tooltiptext">Fur: Zebra</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/23.png" alt="23" /><span class="tooltiptext">Fur: Snow</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/29.png" alt="29" /><span class="tooltiptext">Halloween: 	2014 • 2015 • 2016 • 2017 • 2018 • 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/30.png" alt="30" /><span class="tooltiptext">Halloween: 2014 • 2015 • 2016 • 2017 • 2018 • 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/158.png" alt="158" /><span class="tooltiptext">Adventure: Fishing - 2016 • 2017 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/32.png" alt="32" /><span class="tooltiptext">Fur: Leopard</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/33.png" alt="33" /><span class="tooltiptext">Christmas: 2014 • 2017 • 2018 • Oracle</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/34.png" alt="34" /><span class="tooltiptext">Christmas: 2014 • 2016 • 2017 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/35.png" alt="35" /><span class="tooltiptext">Christmas: 2014 • 2015 • 2016 • 2017 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/163.png" alt="163" /><span class="tooltiptext">Adventure: Vegetable Garden - 2016 • 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/36.png" alt="36" /><span class="tooltiptext">Fur: Night</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/40.png" alt="40" /><span class="tooltiptext">Fur: Blue-gray gradient</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/42.png" alt="42" /><span class="tooltiptext">Obtaining: Obtained by logging into Transformice on Steam</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/43.png" alt="43" /><span class="tooltiptext">Fur: Cupid</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/44.png" alt="44" /><span class="tooltiptext">Fur: Gazelle</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/46.png" alt="46" /><span class="tooltiptext">Events: Easter - 2015 • Saint Patrick's Day 2018 • Saint Patrick's Day 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/174.png" alt="174" /><span class="tooltiptext">Adventure: Christmas 2016 • 2017 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/49.png" alt="49" /><span class="tooltiptext">Fur: Black and white cat</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/52.png" alt="52" /><span class="tooltiptext">Fur: Musical</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/54.png" alt="54" /><span class="tooltiptext">Obtaining: Buy "Lenneth's Helmet" ear item</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/184.png" alt="184" /><span class="tooltiptext">Adventure: Fishing - 2017</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/60.png" alt="60" /><span class="tooltiptext">Fur: Raccoon</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/193.png" alt="193" /><span class="tooltiptext">Adventure: Christmas - 2017 • 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/68.png" alt="68" /><span class="tooltiptext">Fur: Eskimouse</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/202.png" alt="202" /><span class="tooltiptext">Adventure: Saint Patrick's Day - 2018 • 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/204.png" alt="204" /><span class="tooltiptext">Fur: Deer</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/209.png" alt="209" /><span class="tooltiptext">Adventure: Fishing - 2018</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/230.png" alt="230" /><span class="tooltiptext">Adventure: Valentine's Day - 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/236.png" alt="236" /><span class="tooltiptext">Fur: Alligator</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/240.png" alt="240" /><span class="tooltiptext">Adventure: Vegetable Garden - 2019</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/124.png" alt="124" /><span class="tooltiptext">Obtaining: Play 1,500 rounds of Racing</span></div>
+            <div class="tooltip"><img src="https://cheese.formice.com/img/badges/255.png" alt="255" /><span class="tooltiptext">Adventure: Christmas - 2019</span></div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-award fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Cartouches</h2>
+        <div class="w3-container">
+            <h3>Total : 17</h3>
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/6/61/Macaron_0.png/revision/latest?cb=20160101203126" alt="Macaron_0" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/8/86/Macaron_4.png/revision/latest?cb=20160101203106" alt="Macaron_4" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/2/29/Macaron_7.png/revision/latest?cb=20160116080426
+            " alt="Macaron_7" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/4/43/Macaron_13.png/revision/latest?cb=20160304144502
+            " alt="Macaron_13" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/a/a1/Macaron_14.png/revision/latest?cb=20160311144633
+            " alt="Macaron_14" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/d/d0/Macaron_16.png/revision/latest?cb=20160324195213
+            " alt="Macaron_16" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/c/c1/Macaron_21.png/revision/latest?cb=20160430012120
+            " alt="Macaron_21" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/a/a1/Macaron_24.png/revision/latest?cb=20180223183816
+            " alt="Macaron_24" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/5/5b/Macaron_26.png/revision/latest?cb=20160818131734
+            " alt="Macaron_26" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/c/cd/Macaron_28.png/revision/latest?cb=20180223183928
+            " alt="Macaron_28" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/5/5b/Macaron_34.png/revision/latest?cb=20180217210339
+            " alt="Macaron_34" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/7/7e/Macaron_37.png/revision/latest?cb=20190106030507
+            " alt="Macaron_37" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/1/10/Macaron_40.png/revision/latest?cb=20190216002653
+            " alt="Macaron_40" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/5/50/Macaron_41.png/revision/latest?cb=20190906011348
+            " alt="Macaron_41" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/c/c8/Macaron_44.png/revision/latest?cb=20191214140631
+            " alt="Macaron_44" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/c/cf/Macaron_45.png/revision/latest?cb=20200215004118
+            " alt="Macaron_45" />
+            <img width="50" height="50" src="https://vignette.wikia.nocookie.net/transformice/images/4/40/Macaron_46.png/revision/latest?cb=20200215004104
+            " alt="Macaron_46" />
           <hr>
         </div>
       </div>
