@@ -1,10 +1,9 @@
 var defaultSettings = {
 
     align: 'c',
-    quality: 'medium',
+    quality: 'low',
     scale: 'default',
     wmode: 'window',
-    background: '#FFFFFF'
-    // background: '#6A7495'
+    background: '#6A7495'
 
 }
