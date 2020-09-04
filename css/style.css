@@ -187,7 +187,7 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: rgb(255, 255, 255);
 }
 
 .loader {
@@ -207,19 +207,19 @@ ol {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #000000;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #7a296f;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #ff00d4;
 		border-left-color: transparent;
 	}
 }
@@ -227,17 +227,17 @@ ol {
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #000000;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #7a296f;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #ff00d4;
 		border-left-color: transparent;
 	}
 }
