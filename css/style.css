@@ -830,7 +830,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .about-text {
-	max-width: 810px;
+	max-width: 400px;
 	margin: 0 auto;
 	padding: 75px 0 50px;
 }
@@ -838,7 +838,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .about-text h2 {
 	display: inline-block;
 	padding-bottom: 8px;
-	border-bottom: 3px solid #2916e0;
+	border-bottom: 3px solid #000000;
 	margin-bottom: 20px;
 }
 
