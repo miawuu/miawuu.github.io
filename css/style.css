@@ -44,7 +44,6 @@ h1 {
 }
 
 h2 {
-	margin-left: 130px;
 	font-size: 36px;
 }
 
@@ -721,7 +720,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	-ms-flex: 0 0 47%;
 	-webkit-box-flex: 0;
 	flex: 0 0 47%;
-	max-width: 47%;
+	max-width: 100%;
 	padding: 0 15px;
 }
 
@@ -730,7 +729,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 576px) {
 	.about-section .about-left {
-		max-width: 100%;
+		width: 300px;
+		height: 200px;
 	}
 }
 
@@ -835,17 +835,24 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding: 75px 0 50px;
 }
 
-.about-text h2 {
+.about-text h3 {
 	display: inline-block;
-	padding-bottom: 8px;
-	border-bottom: 3px solid #000000;
+	margin-left: 20px;
 	margin-bottom: 20px;
+	/* padding-bottom: 8px; */
+	border-bottom: 3px solid #000000;
+	/* margin-bottom: 20px; */
+}
+
+.about-text h5 {
+	margin-left: 20px;
 }
 
 .about-text p {
 	font-size: 16px;
 	line-height: 1.6;
 	margin-bottom: 9px;
+	margin-left: 20px;
 }
 
 .skill-warp {
