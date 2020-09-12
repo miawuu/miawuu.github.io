@@ -54,7 +54,8 @@ h4 {
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 20px;
+	font-family: cooper;
 }
 
 h6 {
@@ -1842,18 +1843,17 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 .canvas {
     background: lightblue;
     min-height: 100vh;
-  height: 800px;
+  	height: 800px;
     position: relative;
     overflow: hidden;
   }
-  
+
   .cat {
-	margin-bottom: 140px;
     width: 400px;
     height: 400px;
     position: absolute;
     left: 20%;
-    top: 25%;
+    top: 15%;
   }
   
   .cat:after {

@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap");
 
 
@@ -113,7 +114,7 @@ ol {
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: top center;
 }
 
@@ -1167,6 +1168,18 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .blog-grid-warp {
 	margin-left: -5px;
 	margin-right: -5px;
+}
+
+.h4 {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-right: 74px;
+	padding-left: 210px;
+	z-index: 99;
 }
 
 .blog-grid-sizer,
