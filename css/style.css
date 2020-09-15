@@ -1,13 +1,3 @@
-/* =================================
-------------------------------------
-  Tulen | Photography HTML Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap");
 
@@ -44,7 +34,6 @@ h1 {
 }
 
 h2 {
-	margin-left: 130px;
 	font-size: 36px;
 }
 
@@ -125,7 +114,7 @@ ol {
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: top center;
 }
 
@@ -721,7 +710,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	-ms-flex: 0 0 47%;
 	-webkit-box-flex: 0;
 	flex: 0 0 47%;
-	max-width: 47%;
+	max-width: 100%;
 	padding: 0 15px;
 }
 
@@ -730,7 +719,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 576px) {
 	.about-section .about-left {
-		max-width: 100%;
+		width: 300px;
+		height: 200px;
 	}
 }
 
@@ -835,17 +825,24 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding: 75px 0 50px;
 }
 
-.about-text h2 {
+.about-text h3 {
 	display: inline-block;
-	padding-bottom: 8px;
-	border-bottom: 3px solid #000000;
+	margin-left: 20px;
 	margin-bottom: 20px;
+	/* padding-bottom: 8px; */
+	border-bottom: 3px solid #000000;
+	/* margin-bottom: 20px; */
+}
+
+.about-text h5 {
+	margin-left: 20px;
 }
 
 .about-text p {
 	font-size: 16px;
 	line-height: 1.6;
 	margin-bottom: 9px;
+	margin-left: 20px;
 }
 
 .skill-warp {
@@ -1171,6 +1168,18 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .blog-grid-warp {
 	margin-left: -5px;
 	margin-right: -5px;
+}
+
+.h4 {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-right: 74px;
+	padding-left: 210px;
+	z-index: 99;
 }
 
 .blog-grid-sizer,
