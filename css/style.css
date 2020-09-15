@@ -115,7 +115,7 @@ ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: top center;
+	background-position: center;
 }
 
 .spad {
@@ -509,7 +509,7 @@ ol {
 	position: relative;
 	z-index: 5;
 	opacity: 0;
-	top: -50px;
+	top: 0;
 }
 
 .pana-accordion-item .pa-text .pa-tag,

@@ -9,7 +9,7 @@
 .pana-accordion .pana-accordion-wrap {
 	margin-left: -1px;
 	position: relative;
-	width: 300%
+	width: 200%
 }
 
 .pana-accordion .pana-accordion-wrap .pana-accordion-item {
@@ -25,7 +25,7 @@
 	
 }
 .pana-accordion .pana-accordion-wrap .pana-accordion-item.active {
-	background-position: top center;
+	background-position: center;
 }
 
 .pana-accordion .pana-accordion-wrap .pana-accordion-item .pana-accordion-mask {
