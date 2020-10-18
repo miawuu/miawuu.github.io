@@ -696,10 +696,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .about-section {
 	height: 100%;
+	justify-content: center;
 }
 
 .about-section .about-warp {
 	height: 100%;
+	justify-content: center;
 	display: -ms-flexbox;
 	display: -webkit-box;
 	display: flex;
@@ -713,6 +715,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 576px) {
 	.about-section .about-warp {
 		display: block;
+		justify-content: center;
 	}
 }
 
@@ -753,6 +756,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .about-img {
+	justify-content: center;
 	text-align: center;
 	background-image: url("../img/about-bg.png");
 	background-repeat: no-repeat;
@@ -763,24 +767,28 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	.about-img {
 		background-size: 300px;
+		justify-content: center;
 	}
 }
 
 @media (max-width: 576px) {
 	.about-img {
 		background-size: 250px;
+		justify-content: center;
 	}
 }
 
 .about-img img {
 	width: 415px;
 	height: 380px;
+	justify-content: center;
 	/* border-radius: 50%; */
 	margin: 82px auto 50px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	.about-img img {
+		justify-content: center;
 		width: 415px;
 		height: 380px;
 	}
@@ -788,6 +796,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media (max-width: 576px) {
 	.about-img img {
+		justify-content: center;
 		width: 315px;
 		height: 200px;
 	}
@@ -832,7 +841,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .about-text {
 	max-width: 400px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	padding: 75px 0 50px;
 }
 
