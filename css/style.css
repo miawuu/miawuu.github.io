@@ -938,7 +938,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 576px) {
 	.nice-scroll {
 		height: 100%;
-		overflow: inherit;
+		overflow: hidden;
 	}
 }
 
@@ -1208,6 +1208,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .blog-grid-sizer,
 .blog-grid {
 	width: 20%;
+	margin: auto;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
@@ -1215,6 +1216,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	.blog-grid-sizer,
 	.blog-grid {
 		width: 25%;
+		margin: auto;
 	}
 }
 
@@ -1223,6 +1225,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	.blog-grid-sizer,
 	.blog-grid {
 		width: 33.333333%;
+		margin: auto;
 	}
 }
 
@@ -1232,6 +1235,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	.blog-grid-sizer,
 	.blog-grid {
 		width: 50%;
+		margin: auto;
 	}
 }
 
@@ -1240,6 +1244,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	.blog-grid-sizer,
 	.blog-grid {
 		width: 100%;
+		margin: auto;
 	}
 
 	.blog-grid-sizer img,
@@ -1251,6 +1256,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .blog-grid {
 	padding: 0 5px;
 	margin-bottom: 10px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
 }
 
 .blog-item {
