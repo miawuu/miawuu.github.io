@@ -448,7 +448,7 @@ ol {
 	}
 }
 
-.sm-footer .sm-socail a {
+.sm-footer .sm-social a {
 	display: inline-block;
 	font-size: 18px;
 	color: #b2b2b2;
@@ -456,7 +456,7 @@ ol {
 	margin-bottom: 10px;
 }
 
-.sm-footer .sm-socail a:last-child {
+.sm-footer .sm-social a:last-child {
 	margin-right: 0;
 }
 
