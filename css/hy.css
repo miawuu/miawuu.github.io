@@ -438,7 +438,7 @@ ol {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	padding: 0 15px;
+	padding: 0 5px;
 }
 
 @media (max-height: 500px) {
@@ -453,7 +453,7 @@ ol {
 	font-size: 18px;
 	color: #b2b2b2;
 	margin-right: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 200px;
 }
 
 .sm-footer .sm-social a:last-child {
