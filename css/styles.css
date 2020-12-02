@@ -107,10 +107,18 @@ html,body{
 .daHeader{
     text-align: center;
     font-family: Poppins;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .daHeader h1 {
+    color: #AF72FE;
+    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    font-family: "Poppins", kindergarten;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.daHeader p {
     color: #AF72FE;
     text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
@@ -221,6 +229,7 @@ html,body{
     text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
+    font-size: 45px;
 }
 
 .imgz {
@@ -235,7 +244,7 @@ html,body{
     color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
-    margin-left: 300px;
+    margin-left: 380px;
     margin-top: 20px;
     position: absolute;
     border-radius: 20px;
@@ -333,6 +342,14 @@ li p{
     margin: 40px 0;
 }
 
+.daHeader h1 {
+    color: #AF72FE;
+    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    font-family: "Poppins", kindergarten;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .daCards{
     display: flex;
     flex-direction: column;
@@ -367,7 +384,7 @@ li p{
     color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
-    margin-left: 65px;
+    margin-left: 80px;
     margin-top: 13px;
     position: absolute;
     border-radius: 20px;
@@ -428,7 +445,7 @@ li p{
 
 .caption-container {
     width: 300px;
-    height: auto;
+    height: 30px;
     border-radius: 10px;
     margin-top: 10px;
     position: relative;
@@ -492,12 +509,11 @@ li p{
 /* SOCMED ICON */
 .fa {
     padding: 10px;
-    border-radius: 20px;
-    font-size: 30px;
-    width: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 40px;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
+    margin: 10px 5px;
   }
 
 .fa:hover {

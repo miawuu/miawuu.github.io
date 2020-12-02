@@ -1,0 +1,53 @@
+.overall{
+    position: relative;
+    margin: 0px 560px;
+}
+
+.ring{
+    height: 1px;
+    width: 5px;
+    background-color: #c03636;
+    border: 2px solid  #f99d24;
+    border-radius: 45%;
+    position: fixed;
+    left: 76.4px;
+    top: 0px;
+}
+  
+.string{
+    width: 1.5px;
+    position: relative;
+    background-color: #f99d24;
+    height: 100px;
+    left: 80px;
+    top: 12.4px;
+    margin-top: 0px;
+}
+  
+
+.buttonz {
+    height: 22px;
+    width: 30px;
+    background-color: #f99d24;
+    position: relative;
+    left: 67px;
+    top: 10px;
+    border-radius: 4px;
+}
+  
+.ball{
+    background-color: #6B2F36;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 5px;
+    box-shadow: 0 3px 10px#AF72FE;
+}
+
+@media only screen and (max-width: 600px){
+    .overall{
+        position: relative;
+        margin: 0px 160px;
+    }
+}
