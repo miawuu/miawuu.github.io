@@ -403,8 +403,8 @@ li p{
     color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-left: 65px;
+    margin-top: 13px;
     position: absolute;
     border-radius: 20px;
     background-color: #B191FC;
@@ -416,7 +416,7 @@ li p{
     border: 4px solid #B191FC;
     border-radius: 20px;
     padding: 0px;
-    width: 400px;
+    width: 340px;
 }
 
 .caption-container {
