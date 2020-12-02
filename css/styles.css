@@ -27,7 +27,7 @@ html,body{
     align-items: center;
     padding: 0 25px 0 25px;
     background-color: #131516;
-    box-shadow: 0 4px 5px rgba(223, 150, 245, 0.918);
+    box-shadow: 0 4px 5px#AF72FE;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
