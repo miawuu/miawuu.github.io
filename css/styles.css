@@ -1,9 +1,11 @@
 html,body{
-    background-color: #fff;
+    background-color: #181A1B;
     font-family: 'Poppins',Poppins;
     overflow-x: hidden !important;
     margin: 0px !important;
     padding: 0px !important;
+    height: auto;
+    width: auto;
 }
 
 *{
@@ -17,14 +19,15 @@ html,body{
     top: 0;
     right: 0;
     left: 0;
-    height: 70px;
+    height: 65px;
     display: flex;
+    color: #ffffff;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px 0 25px;
-    background-color: #fff;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    background-color: #131516;
+    box-shadow: 0 4px 5px rgba(223, 150, 245, 0.918);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -40,10 +43,11 @@ html,body{
     margin-left: 25px;
 }
 
-/* LANDING CSS */
+/* LANDING */
 
 .landing{
     display: flex;
+    background-color: #131516;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -62,12 +66,12 @@ html,body{
 
 .landingText h3{
     font-size: 20px;
-    color: #0000007a;
+    color: #797978;
     line-height: 30px;
 }
 
 .landingText h2{
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -85,11 +89,6 @@ html,body{
     text-align: center
 }
 
-.landingText .btn a{
-    font-size: 1.2vw;
-    color: #fff;
-}
-
 .landingImage img{
     width: 28vw;
 }
@@ -97,18 +96,20 @@ html,body{
 /* DAFTAR ACARA */
 
 .daSection{
+    background-color: #131516;
     height: 600px;
     overflow-x: hidden;
 }
 
 .daHeader{
     text-align: center;
+    font-family: Poppins;
     margin-bottom: 40px;
 }
 
 .daHeader h1 {
     color: #AF72FE;
-    text-shadow: 0 5px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
 }
@@ -128,7 +129,7 @@ html,body{
     height: 200px;
     width: 350px;
     border-radius: 20px;
-    background: #ffffff;
+    background: #181A1B;
     box-shadow: 0 10px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
 }
 
@@ -159,6 +160,7 @@ html,body{
 }
 
 .cardContent h2{
+    color: #ffffff;
     font-family: Poppins;
     font-weight: 600;
     font-size: 24px;
@@ -166,6 +168,7 @@ html,body{
 }
 
 .cardContent p{
+    color: #858280;
     font-family: Poppins;
     line-height: 10px;
     opacity: 0.6
@@ -198,7 +201,9 @@ html,body{
 
 /* Galeri Section */
 .galeriSection{
+    background-color: #131516;
     height: 600px;
+    margin-bottom: 0px;
     overflow-x: hidden;
 }
 
@@ -209,8 +214,29 @@ html,body{
 
 .galeriHeader h1 {
     color: #AF72FE;
+    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
+}
+
+.imgz {
+    height: 500;
+    border: 4px solid #B191FC;
+    border-radius: 20px;
+    padding: 0px;
+    width: 540px;
+}
+
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-left: 300px;
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #B191FC;
+    top: 0;
 }
 
 /* RESPONSIVE */
@@ -243,10 +269,10 @@ html,body{
     align-items: center;
     align-content: center;
     height: auto;
-    width: auto;
+    width: auto
 }
 
-/* LANDING PAGE */
+/* LANDING 300px */
 
 .landing{
     flex-direction: column-reverse;
@@ -256,9 +282,12 @@ html,body{
     text-align: center
 }
 
-.landingText h1{
-    font-size: 6vw;
-    margin: 0 !important;
+.logo {
+    font-family: Poppins;
+}
+
+.landingText h2{
+    font-family: Poppins;
 }
 
 .landingText h3{
@@ -309,38 +338,8 @@ li p{
     margin-bottom: 60px;
 }
 
-.banner{
-    height: auto;
-    flex-direction: column-reverse;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.banner h1{
-    font-size: 6vw;
-}
-
-.bannerInnerText{
-    font-size: 3vw !important;
-}
-
-.bannerText img{
-    width: 20vw;
-}
-
-.bannerImg img{
-    width: 26vw;
-}
-
-.footer{
-    padding-bottom: 40px;
-}}
-
-
-
-/* SLIDESHOW */
+/* SLIDESHOW 600px */
   
 .container {
     position: relative;
@@ -355,50 +354,7 @@ li p{
 .cursor {
     cursor: pointer;
 }
-  
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 37%;
-    width: auto;
-    height: auto;
-    margin-right: 17px;
-    padding: 10px;
-    margin-top: -30px;
-    color: #000000;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 20px;
-    user-select: none;
-    -webkit-user-select: none;
-}
 
-.prev {
-    cursor: pointer;
-    position: absolute;
-    top: 38%;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin-top: -30px;
-    color: #000000;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 20px;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 20px;
-}
-  
-.prev:hover,
-.next:hover {
-    background-color:#B191FC;
-}
-  
 .numbertext {
     color: #ffffff;
     font-size: 12px;
@@ -417,6 +373,49 @@ li p{
     border-radius: 20px;
     padding: 0px;
     width: 340px;
+}}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 37%;
+    width: auto;
+    height: auto;
+    margin-right: 17px;
+    padding: 10px;
+    margin-top: -30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 38%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-top: -30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 20px;
+}
+  
+.prev:hover,
+.next:hover {
+    background-color:#B191FC;
 }
 
 .caption-container {
