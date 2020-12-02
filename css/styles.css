@@ -4,8 +4,6 @@ html,body{
     overflow-x: hidden !important;
     margin: 0px !important;
     padding: 0px !important;
-    height: auto;
-    width: auto;
 }
 
 *{
@@ -49,6 +47,7 @@ html,body{
     display: flex;
     background-color: #131516;
     flex-direction: row;
+    overflow-x: hidden;
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw 0 10vw;
@@ -203,13 +202,14 @@ html,body{
 .galeriSection{
     background-color: #131516;
     height: 600px;
+    width: auto;
     margin-bottom: 0px;
     overflow-x: hidden;
 }
 
 .galeriHeader{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .galeriHeader h1 {
@@ -450,4 +450,65 @@ li p{
 .active,
 .demo:hover {
     opacity: 1;
+}
+
+/* FOOTER */
+.footer{
+    height: 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-family: Poppins;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.footer b {
+    color: #B191FC;
+    font-family: Poppins;
+}
+
+.footer span {
+    color: #ff0015;
+    font-family: Poppins;
+}
+
+/* SOCMED ICON */
+.fa {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.fa-instagram {
+    background: #B191FC;
+    color: white;
+}
+
+.fa-twitter {
+    background: #B191FC;
+    color: white;
 }
