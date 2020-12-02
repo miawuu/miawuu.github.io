@@ -11,9 +11,13 @@ html,body{
     box-sizing: border-box;
 }
 
+.wrapper {
+    background-color: #131516;
+}
+
 .nav{
     position: fixed;
-    z-index: 999;
+    z-index: 1;
     top: 0;
     right: 0;
     left: 0;
@@ -21,13 +25,13 @@ html,body{
     display: flex;
     color: #ffffff;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 25px 0 25px;
     background-color: #131516;
     box-shadow: 0 4px 5px#AF72FE;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .nav .logo {
@@ -241,6 +245,10 @@ html,body{
 
 /* RESPONSIVE */
 @media only screen and (max-width: 600px){
+
+.wrapper {
+    background-color: #131516;
+}
 
 .nav{
     flex-direction: column;
