@@ -1,0 +1,28 @@
+/* FOOTER */
+.footer{
+    height: 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-family: Poppins;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.footer b {
+    color: #B191FC;
+    font-family: Poppins;
+}
+
+.footer span {
+    color: #ff0015;
+    font-family: Poppins;
+}

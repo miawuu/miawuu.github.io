@@ -1,0 +1,126 @@
+/* IG EFFECT */
+
+.igeffectSection{
+    background-color: #131516;
+    height: 800px;
+    overflow-x: hidden;
+}
+
+.ieHeader{
+    text-align: center;
+    font-family: Poppins;
+    margin-bottom: 0px;
+}
+
+.ieHeader h1 {
+    color: #AF72FE;
+    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    font-family: "Poppins", kindergarten;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.ieHeader span {
+    color: #AF72FE;
+    font-size: 20px;
+    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    font-family: "Poppins", kindergarten;
+}
+
+.ieCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 0 40px 0;
+}
+
+.ieCards .card{
+    position: relative;
+    height: 450px;
+    width: 320px;
+    border-radius: 20px;
+    /* background: #ffffff; */
+    background-image: url("https://image.prntscr.com/image/KJVZ3JxDSIW-JR5RywNQhw.png");
+    background-repeat: no-repeat;
+    box-shadow: 0 0px 20px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+}
+
+.ieCards .one .cardoneImg{
+    width: 60px;
+    position: absolute;
+    border-radius: 20px;
+    top: 340px;
+    right: 240px;
+}
+
+.ieCards .cardContent h2 {
+    margin-bottom: 345px;
+    margin-left: 215px;
+    margin-right: 10px;
+    background-color: #AF72FE;
+    justify-content: center;
+    border-radius: 10px;
+    left: 10px;
+}
+
+.ieCards .cardContent span {
+    color: #AF72FE;
+    margin-left: 10px;
+}
+
+.ieCards .cardContent h3 {
+    color: white;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px){
+
+    .igeffectSection{
+        background-color: #131516;
+        height: 550px;
+        overflow-x: hidden;
+    }
+
+    .ieCards .card{
+        position: relative;
+        height: 350px;
+        width: 250px;
+        border-radius: 20px;
+        /* background: #181A1B; */
+        background-image: url("https://image.prntscr.com/image/KJVZ3JxDSIW-JR5RywNQhw.png");
+        background-repeat: no-repeat;
+        box-shadow: 0 0px 20px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+    }
+    
+    .ieCards .one .cardoneImg{
+        width: 50px;
+        position: absolute;
+        border-radius: 10px;
+        top: 250px;
+        right: 180px;
+    }
+    
+    .ieCards .cardContent h2 {
+        font-size: 20px;
+        margin-bottom: 255px;
+        margin-left: 180px;
+        margin-right: -10px;
+        background-color: #AF72FE;
+        justify-content: center;
+        border-radius: 8px;
+        left: 10px;
+    }
+    
+    .ieCards .cardContent span {
+        color: #AF72FE;
+        margin-left: 5px;
+    }
+    
+    .ieCards .cardContent h3 {
+        color: white;
+    }
+}
