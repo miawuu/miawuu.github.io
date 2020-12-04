@@ -55,7 +55,7 @@ html,body{
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw 0 10vw;
-    height: 120vh;
+    height: 90vh;
 }
 
 hr.num1 {
@@ -121,8 +121,8 @@ hr.num2 {
     width: auto;
     overflow-y: hidden;
     box-shadow: 0 5px 10px#AF72FE;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .nav h4{

@@ -9,7 +9,6 @@
 .daHeader{
     text-align: center;
     font-family: Poppins;
-    margin-bottom: 0px;
 }
 
 .daHeader h1 {
@@ -43,7 +42,7 @@
     width: 350px;
     border-radius: 20px;
     background: #181A1B;
-    box-shadow: 0 10px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+    box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
 }
 
 .daCards .one .cardoneImg{
@@ -115,8 +114,8 @@
 /* RESPONSIVE */
 @media only screen and (max-width: 600px){
     .daSection{
-        width: 500px;
-        height: 660px;
+        width: auto;
+        height: auto;
         margin-bottom: 100px;
         overflow-x: hidden;
     }
