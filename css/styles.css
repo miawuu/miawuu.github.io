@@ -123,6 +123,10 @@ hr.num2 {
     width: 28vw;
 }
 
+.landingImage2 img{
+    width: 28vw;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 600px){
 
@@ -143,10 +147,10 @@ hr.num2 {
 }
 
 .nav h4{
-    font-size: 4vw;
+    font-size: 5vw;
     margin-top: 10px;
-    margin-bottom: 14px;
-    margin-right: 7px;
+    margin-bottom: 20px;
+    margin-right: 20px
 }
 
 hr.num1 {
@@ -191,10 +195,15 @@ hr.num2 {
 }
 
 .landingImage img{
-    width: 52vw;
-    margin-bottom: 20px;
+    width: 40vw;
+    margin-bottom: 40px;
 }
 
+.landingImage2 img{
+    width: 40vw;
+    margin-bottom: -80px;
+    margin-top: 50px;
+}
 
 ol li{
     font-size: 26px;
