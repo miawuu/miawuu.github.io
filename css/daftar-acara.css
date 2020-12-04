@@ -115,7 +115,10 @@
 /* RESPONSIVE */
 @media only screen and (max-width: 600px){
     .daSection{
-        height: auto;
+        width: 500px;
+        height: 660px;
+        margin-bottom: 100px;
+        overflow-x: hidden;
     }
     
     .daHeader{
@@ -128,7 +131,7 @@
         text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
         font-family: "Poppins", kindergarten;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 30px;
     }
     
     .daCards{
@@ -140,17 +143,26 @@
         text-align: center
     }
     
+    .daCards .card{
+        position: relative;
+        height: 200px;
+        width: 330px;
+        border-radius: 20px;
+        background: #181A1B;
+        box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+    }
+
     .daCards .one .cardoneImg{
         width: 130px;
         position: absolute;
-        top: -70px;
-        right: -10px;
+        top: -90px;
+        right: -20px;
     }
     .daCards .two .cardtwoImg{
         width: 110px;
         position: absolute;
-        top: -55px;
-        right: 15px;
+        top: -65px;
+        right: 2px;
     }
 
     .daCards .card{

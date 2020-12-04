@@ -14,7 +14,7 @@
 
 .ieHeader h1 {
     color: #AF72FE;
-    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    text-shadow: 0 0px 10px #AF72FE, 0 10px 10px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
     font-size: 40px;
@@ -58,13 +58,17 @@
 }
 
 .ieCards .cardContent h2 {
-    margin-bottom: 345px;
-    margin-left: 215px;
-    margin-right: 10px;
-    background-color: #AF72FE;
+    margin-bottom: 355px;
+    margin-left: 240px;
+    margin-right: 15px;
+    margin-top: 12px;
+    color: #ffffff;
+    background-color: #131516;
     justify-content: center;
+    width: 50px;
     border-radius: 10px;
     left: 10px;
+    box-shadow: 0 0px 3px #AF72FE, 0 10px 10px rgba(0,0,0,0.09)
 }
 
 .ieCards .cardContent span {
@@ -85,6 +89,15 @@
         overflow-x: hidden;
     }
 
+    .ieHeader h1 {
+        color: #AF72FE;
+        text-shadow: 0 0px 10px #AF72FE, 0 10px 10px rgba(0,0,0,0.09);
+        font-family: "Poppins", kindergarten;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
     .ieCards .card{
         position: relative;
         height: 350px;
@@ -94,7 +107,7 @@
         background-image: url("../images/igeffect/1st-effect.png");
         background-size: 255px;
         background-repeat: no-repeat;
-        box-shadow: 0 0px 20px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+        box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
     }
     
     .ieCards .one .cardoneImg{
@@ -106,16 +119,33 @@
     }
     
     .ieCards .cardContent h2 {
-        font-size: 20px;
+        font-size: 23px;
         margin-bottom: 255px;
         margin-left: 180px;
-        margin-right: -10px;
-        background-color: #AF72FE;
+        margin-right: 30px;
+        width: 40px;
+        color: #ffffff;
+        background-color: #131516;
         justify-content: center;
-        border-radius: 8px;
+        align-items: center;
+        border-radius: 10px;
         left: 10px;
     }
     
+    /* .ieCards .cardContent h2 {
+        margin-bottom: 355px;
+        margin-left: 240px;
+        margin-right: 15px;
+        margin-top: 12px;
+        color: #ffffff;
+        background-color: #131516;
+        justify-content: center;
+        width: 50px;
+        border-radius: 10px;
+        left: 10px;
+        box-shadow: 0 0px 3px #AF72FE, 0 10px 10px rgba(0,0,0,0.09)
+    } */
+
     .ieCards .cardContent span {
         color: #AF72FE;
         margin-left: 5px;

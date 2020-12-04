@@ -30,8 +30,8 @@ html,body{
     padding: 0 25px 0 25px;
     background-color: #131516;
     box-shadow: 0 4px 5px#AF72FE;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .nav .logo {
@@ -56,6 +56,16 @@ html,body{
     align-items: center;
     padding: 0 10vw 0 10vw;
     height: 120vh;
+}
+
+hr.num1 {
+    border: 2px solid #AF72FE;
+    border-radius: 5px;
+    width: 280px;
+}
+
+hr.num2 {
+    color: #131516;
 }
 
 .landingText {
@@ -110,6 +120,9 @@ html,body{
     height: auto;
     width: auto;
     overflow-y: hidden;
+    box-shadow: 0 5px 10px#AF72FE;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 
 .nav h4{
@@ -117,6 +130,16 @@ html,body{
     margin-top: 10px;
     margin-bottom: 14px;
     margin-right: 7px;
+}
+
+hr.num1 {
+    visibility: hidden;
+}
+
+hr.num2 {
+    border: 2px solid #AF72FE;
+    border-radius: 5px;
+    width: 280px;
 }
 
 /* LANDING 600px */
