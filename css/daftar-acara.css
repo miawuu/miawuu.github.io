@@ -134,12 +134,25 @@
     .daCards{
         display: flex;
         flex-direction: column;
-        padding: 50px;
+        padding: 0px;
         justify-content: center;
         align-items: center;
         text-align: center
     }
     
+    .daCards .one .cardoneImg{
+        width: 130px;
+        position: absolute;
+        top: -70px;
+        right: -10px;
+    }
+    .daCards .two .cardtwoImg{
+        width: 110px;
+        position: absolute;
+        top: -55px;
+        right: 15px;
+    }
+
     .daCards .card{
         margin-bottom: 60px;
     }
