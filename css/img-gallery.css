@@ -1,0 +1,241 @@
+.outer-wrapper {
+    width: 50%;
+    margin: 0px auto;
+  }
+  
+.s-wrap {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 55%;
+    position: relative;
+    border: 5px solid #AF72FE;
+    border-radius: 15px;
+    background-color: #efefe8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.s-wrap > input {
+    display: none;
+  }
+.s-wrap .s-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550%;
+    height: 100%;
+    font-size: 0;
+    list-style: none;
+    transition: transform 1s;
+}
+.s-wrap .s-item {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s-wrap .gambar1 {
+    background-image: url("../images/events/fs-event-camp-1.png");
+}
+.s-wrap .gambar2 {
+    background-image: url("../images/events/fs-event-camp-2.png");
+}
+.s-wrap .gambar3 {
+    background-image: url("../images/events/fs-event-racing-win.png");
+}
+.s-wrap .gambar4 {
+    background-image: url("../images/events/fs-event-survivor.png");
+}
+.s-wrap .gambar5 {
+    background-image: url("../images/events/fs-event-tanyajawab.png");
+}
+.s-wrap .gambar6 {
+    background-image: url("../images/events/lomba-gambar-1.png");
+}
+.s-wrap .gambar7 {
+    background-image: url("../images/events/lomba-gambar-2.png");
+}
+.s-wrap .gambar8 {
+    background-image: url("../images/events/lomba-gambar-3.png");
+}
+.s-wrap .gambar9 {
+    background-image: url("../images/events/lomba-gambar-4.png");
+}
+.s-wrap .gambar10 {
+    background-image: url("../images/events/lomba-gambar-5.png");
+}
+.s-wrap .gambar11 {
+    background-image: url("../images/events/lomba-gambar-6.png");
+}
+.s-wrap .gambar12 {
+    background-image: url("../images/events/lomba-gambar-7.png");
+}
+.s-wrap .gambar13 {
+    background-image: url("../images/events/lomba-gambar-8.png");
+}
+
+.s-type-1 .s-control {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    transition-timing-function: ease-out;
+}
+.s-type-1 .s-control > label[class^="s-c-"] {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #AF72FE;
+    background-color: #AF72FE;
+    cursor: pointer;
+}
+.s-type-1 .s-nav label {
+    display: none;
+    position: absolute;
+    top: 50%;
+    padding: 5px 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.s-type-1 .s-nav label::before, .s-type-1 .s-nav label::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 24px;
+    background-color: #fff;
+}
+.s-type-1 .s-nav label::before {
+    margin-bottom: -12px;
+}
+.s-type-1 .s-nav label.left {
+    left: 20px;
+}
+.s-type-1 .s-nav label.left::before {
+    transform: rotate(45deg);
+}
+.s-type-1 .s-nav label.left::after {
+    transform: rotate(-45deg);
+}
+.s-type-1 .s-nav label.right {
+    right: 20px;
+}
+.s-type-1 .s-nav label.right::before {
+    transform: rotate(-45deg);
+}
+.s-type-1 .s-nav label.right::after {
+    transform: rotate(45deg);
+}
+.s-type-1 #s-1:checked ~ .s-content {
+    transform: translateX(0%);
+}
+.s-type-1 #s-1:checked ~ .s-control .s-c-1 {
+    background-color: rgb(255, 255, 255);
+}
+.s-type-1 #s-1:checked ~ .s-nav .s-nav-1 {
+    display: block;
+}
+.s-type-1 #s-2:checked ~ .s-content {
+    transform: translateX(-20%);
+}
+.s-type-1 #s-2:checked ~ .s-control .s-c-2 {
+    background-color: rgb(255, 255, 255);
+}
+.s-type-1 #s-2:checked ~ .s-nav .s-nav-2 {
+    display: block;
+}
+.s-type-1 #s-3:checked ~ .s-content {
+    transform: translateX(-40%);
+}
+.s-type-1 #s-3:checked ~ .s-control .s-c-3 {
+    background-color: rgb(255, 255, 255);
+}
+.s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
+    display: block;
+}
+.s-type-1 #s-4:checked ~ .s-content {
+    transform: translateX(-60%);
+}
+.s-type-1 #s-4:checked ~ .s-control .s-c-4 {
+    background-color: rgb(255, 255, 255);
+}
+.s-type-1 #s-4:checked ~ .s-nav .s-nav-4 {
+    display: block;
+}
+.s-type-1 #s-5:checked ~ .s-content {
+    transform: translateX(-80%);
+}
+.s-type-1 #s-5:checked ~ .s-control .s-c-5 {
+    background-color: rgb(255, 255, 255);
+}
+.s-type-1 #s-5:checked ~ .s-nav .s-nav-5 {
+    display: block;
+}
+.s-type-1 #s-6:checked ~ .s-content {
+    transform: translateX(20%);
+}
+.s-type-1 #s-6:checked ~ .s-control .s-c-6 {
+    background-color: rgb(255, 255, 255);
+}
+.s-type-1 #s-6:checked ~ .s-nav .s-nav-6 {
+    display: block;
+}
+
+.s-type-2 .s-content {
+    animation: slider-animation 50s ease-in-out infinite;
+}
+.s-type-2 .s-content:hover {
+    animation-play-state: paused;
+}
+  
+@keyframes slider-animation {
+    0%,
+      7% {
+      transform: translateX(0%);
+    }
+    12.5%,
+      19.5% {
+      transform: translateX(-20%);
+    }
+    25%,
+      32% {
+      transform: translateX(-40%);
+    }
+    37.5%,
+      44.5% {
+      transform: translateX(-60%);
+    }
+    50%,
+      57% {
+      transform: translateX(-80%);
+    }
+    62.5%,
+      69.5% {
+      transform: translateX(-60%);
+    }
+    75%,
+      82% {
+      transform: translateX(-40%);
+    }
+    87.5%,
+      94.5% {
+      transform: translateX(-20%);
+    }
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px){
+    .outer-wrapper {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .outer-wrapper h1 {
+        color: white;
+        font-size: 20px;
+    }
+}

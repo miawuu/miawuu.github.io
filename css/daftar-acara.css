@@ -19,6 +19,10 @@
     font-size: 40px;
 }
 
+.daHeader h2 {
+    color: white;
+}
+
 .daHeader p {
     color: #AF72FE;
     text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
@@ -41,7 +45,9 @@
     height: 200px;
     width: 350px;
     border-radius: 20px;
-    background: #181A1B;
+    background-color: #131516;
+    background-repeat: no-repeat;
+    background-size: 400px;
     box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
 }
 
@@ -106,6 +112,31 @@
 
 .cardContent .cardBtn:hover{
   background-color: #AF72FE;
+}
+
+.cardContent .cardBtn .cardIcon{
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 16px;
+}
+
+.cardContent .cardBtn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #AF72FE;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all ease-in-out 0.2s;
+}
+
+.cardContent .cardBtn:hover{
+  background-color: #ffffff;
 }
 
 .cardContent .cardBtn .cardIcon{
