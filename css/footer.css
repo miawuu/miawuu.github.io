@@ -2,16 +2,13 @@
 .footer{
     display: flex;
     flex-direction: row;
-    /* position: relative; */
     font-family: Poppins;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
     margin-bottom: 0px;
-    margin-left: 533px;
     background-color: #131516;
     border-radius: 25px;
-    width: 200px;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -40,12 +37,9 @@
         font-family: Poppins;
         align-items: center;
         justify-content: center;
-        padding-bottom: 50px;
-        margin-bottom: 0px;
-        margin-left: 140px;
+        padding-bottom: 10px;
         background-color: #131516;
         border-radius: 25px;
-        width: 200px;
         height: 50px;
         align-items: center;
         justify-content: center;
