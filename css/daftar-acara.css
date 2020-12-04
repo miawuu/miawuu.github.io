@@ -45,6 +45,10 @@
     box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
 }
 
+.daCards .card:hover{
+    box-shadow: 0 0px 10px #ffffff, 0 10px 10px rgba(0,0,0,0.09)
+}
+
 .daCards .one .cardoneImg{
     width: 160px;
     position: absolute;
