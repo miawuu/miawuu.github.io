@@ -13,8 +13,8 @@
 }
 
 .ieHeader h1 {
-    color: #AF72FE;
-    text-shadow: 0 0px 10px #AF72FE, 0 10px 10px rgba(0,0,0,0.09);
+    color: #ffffff;
+    text-shadow: 0 5px #AF72FE, 0 10px 10px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
     font-size: 40px;
@@ -158,8 +158,8 @@
     }
 
     .ieHeader h1 {
-        color: #AF72FE;
-        text-shadow: 0 0px 10px #AF72FE, 0 10px 10px rgba(0,0,0,0.09);
+        color: #ffffff;
+        text-shadow: 0 5px #AF72FE, 0 10px 10px rgba(0,0,0,0.09);
         font-family: "Poppins", kindergarten;
         font-weight: bold;
         font-size: 30px;

@@ -3,6 +3,14 @@
     margin: 0px auto;
   }
   
+.outer-wrapper h1 {
+    color: #ffffff;
+    text-shadow: 0 5px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .s-wrap {
     width: 100%;
     margin-bottom: 50px;
@@ -237,5 +245,13 @@
     .outer-wrapper h1 {
         color: white;
         font-size: 20px;
+    }
+
+    .outer-wrapper h1 {
+        color: #ffffff;
+        text-shadow: 0 5px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+        font-family: "Poppins";
+        font-weight: bold;
+        font-size: 40px;
     }
 }

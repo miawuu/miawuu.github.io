@@ -12,8 +12,8 @@
 }
 
 .daHeader h1 {
-    color: #AF72FE;
-    text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    color: #ffffff;
+    text-shadow: 0 5px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
     font-size: 40px;
@@ -28,6 +28,16 @@
     text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
+}
+
+.daHeader h3 {
+    color: white;
+    text-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+}
+
+.daHeader span {
+    color: white;
+    text-shadow: 0 3px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
 }
 
 .daCards{
@@ -161,13 +171,25 @@
     }
     
     .daHeader h1 {
-        color: #AF72FE;
-        text-shadow: 0 5px 6px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+        color: #ffffff;
+        text-shadow: 0 5px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
         font-family: "Poppins", kindergarten;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 40px;
     }
     
+    .daHeader h3 {
+        color: white;
+        text-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+        font-size: 15px;
+    }
+    
+    .daHeader span {
+        color: white;
+        text-shadow: 0 3px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+        font-size: 15px;
+    }
+
     .daCards{
         display: flex;
         flex-direction: column;
