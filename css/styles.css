@@ -124,7 +124,7 @@ hr.num2 {
 }
 
 .landingImage2 img{
-    width: 28vw;
+    width: 40vw;
 }
 
 /* RESPONSIVE */
@@ -200,8 +200,8 @@ hr.num2 {
 }
 
 .landingImage2 img{
-    width: 40vw;
-    margin-bottom: -80px;
+    width: 70vw;
+    margin-bottom: -100px;
     margin-top: 50px;
 }
 

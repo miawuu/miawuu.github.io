@@ -1,134 +1,198 @@
-// Debounce
-function debounce(a,b,c){var d;return function(){var e=this,f=arguments;clearTimeout(d),d=setTimeout(function(){d=null,c||a.apply(e,f)},b),c&&!d&&a.apply(e,f)}}
-
-var SlideShow = function() {
+const slideData = [
+  {
+    index: 0,
+    headline: 'New Fashion Apparel',
+    button: 'Shop now',
+    src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg' },
   
-  var
-    slider,
-    slide,
-    nextButton,
-    prevButton,
-    slideAmount,
-    sliderWidth,
-    title,
-    subTitle,
-    clickCounter,
-    slideCounter;
+  {
+    index: 1,
+    headline: 'In The Wilderness',
+    button: 'Book travel',
+    src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg' },
   
-  var _init = function () {
-    slider        = document.getElementsByClassName('slideShow__container')[0];
-    slide         = document.getElementsByClassName('slideShow__slide');
-    slideAmount   = slide.length;
-    nextButton    = document.getElementsByClassName('slideShow__next')[0];
-    prevButton    = document.getElementsByClassName('slideShow__prev')[0];    
-    title         = document.getElementsByClassName('slideShow__slideTitle');    
-    subTitle      = document.getElementsByClassName('slideShow__slideSubTitle');    
-    sliderWidth   = parseInt(getComputedStyle(slider).width);
-    clickCounter  = 0;  
-    slideCounter  = 0;  
-    
-    _eventHandlers();
-    _navButtons();
-    _animateSlideIn(slideCounter);
-  }
+  {
+    index: 2,
+    headline: 'For Your Current Mood',
+    button: 'Listen',
+    src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg' },
   
-  var _eventHandlers = function() {
-    nextButton.addEventListener('click', _slideNext, false);
-    prevButton.addEventListener('click', _slidePrev, false);
-    window.addEventListener('resize', _resize, false);
-  } 
+  {
+    index: 3,
+    headline: 'Focus On The Writing',
+    button: 'Get Focused',
+    src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg' }];
   
-  var _navButtons = function () {
-    if (clickCounter === 0 ) {
-      prevButton.classList.add('is-inactive')
-    } else {
-      prevButton.classList.remove('is-inactive')
+  
+  // =========================
+  // Slide
+  // =========================
+  
+  class Slide extends React.Component {
+    constructor(props) {
+      super(props);
+  
+      this.handleMouseMove = this.handleMouseMove.bind(this);
+      this.handleMouseLeave = this.handleMouseLeave.bind(this);
+      this.handleSlideClick = this.handleSlideClick.bind(this);
+      this.imageLoaded = this.imageLoaded.bind(this);
+      this.slide = React.createRef();
     }
-  }  
   
-  var _slideNext = function() {  
-    clickCounter++;    
-    slideCounter = clickCounter-1;
-    if(clickCounter >= slideAmount) {
-      clickCounter = 0;
-      slideCounter = slideAmount - 1;
-    }  
-    var tl = new TimelineLite();
-    tl 
-      .add(_animateSlideOut(slideCounter))
-      .to(slider, .9, {x:-clickCounter*sliderWidth, ease: Power2.easeOut})  
-      .add(_animateSlideIn(clickCounter))
-    _navButtons();    
-  }
+    handleMouseMove(event) {
+      const el = this.slide.current;
+      const r = el.getBoundingClientRect();
   
-  var _slidePrev = function() {
-    if(clickCounter > 0 ) {
-      clickCounter--;
-      
-      // _getPreviousSlide(clickCounter +1)
-      var tl = new TimelineLite();
-      tl
-      .add(_animateSlideOut(clickCounter+1))
-      .to(slider, .9, {x:'+='+sliderWidth, ease: Power2.easeOut}, '-=0.2')
-      .add(_animateSlideIn(clickCounter));
-      
-    }    
-    _navButtons();    
-  }
-  
-  var _animateSlideIn = function(index) {
-    var currentSlide  = slide[index];
-    var title         =  currentSlide.children[1].children[0];
-    var subTitle      =  currentSlide.children[1].children[1];
-    var image         =  currentSlide.children[0];
-    
-    var splitTitle = new SplitText(title);
-    var revertTitle = function() {
-      splitTitle.revert(); 
+      el.style.setProperty('--x', event.clientX - (r.left + Math.floor(r.width / 2)));
+      el.style.setProperty('--y', event.clientY - (r.top + Math.floor(r.height / 2)));
     }
-    
-    TweenLite.set(title, {perspective:400});
-    
-    var tl            = new TimelineLite({onComplete:revertTitle });    
-    tl      
-      .set(title, {opacity: 1})
-      .staggerFrom(splitTitle.chars, 0.8, {
-        opacity:0, 
-        scale:0, 
-        y:80, 
-        rotationX:180, 
-        transformOrigin:"0% 50% -50",  
-        ease:Back.easeOut
-      }, 0.03)
-      .fromTo(subTitle, 0.6, {y:50, opacity: 0},{y:0, opacity:1}, '-=0.3')  
-      .to(image, 0.4, {scale: 1, ease:Power2.easeOut},'-=0.6' )
-    return tl;
-  }
   
-  var _animateSlideOut = function(index) {
-    var currentSlide = slide[index];
-    var title         =  currentSlide.children[1].children[0];
-    var subTitle      =  currentSlide.children[1].children[1];
-    var image         =  currentSlide.children[0];
-    
-    var tl = new TimelineLite();
-    tl
-      .to(title, 0.3, {opacity: 0})
-      .to(subTitle, 0.3, {y:50, opacity: 0}, '-=0.3')
-      .to(image, 0.4, {scale: 0.8, ease:Power2.easeIn}, '-=0.3' )
-    return tl;      
-  }
+    handleMouseLeave(event) {
+      this.slide.current.style.setProperty('--x', 0);
+      this.slide.current.style.setProperty('--y', 0);
+    }
   
-  var _resize = debounce(function() {    
-    sliderWidth   = parseInt(getComputedStyle(slider).width);
-    sliderOffset = sliderWidth * clickCounter;
-    slider.style.transform = 'matrix(1, 0, 0, 1, -'+ sliderOffset + ', 0)'
-  }, 50)
+    handleSlideClick(event) {
+      this.props.handleSlideClick(this.props.slide.index);
+    }
   
-   return {
-    init: _init
-  }
+    imageLoaded(event) {
+      event.target.style.opacity = 1;
+    }
   
-}();
+    render() {
+      const { src, button, headline, index } = this.props.slide;
+      const current = this.props.current;
+      let classNames = 'slide';
+  
+      if (current === index) classNames += ' slide--current';else
+      if (current - 1 === index) classNames += ' slide--previous';else
+      if (current + 1 === index) classNames += ' slide--next';
+  
+      return (
+        React.createElement("li", {
+          ref: this.slide,
+          className: classNames,
+          onClick: this.handleSlideClick,
+          onMouseMove: this.handleMouseMove,
+          onMouseLeave: this.handleMouseLeave },
+  
+        React.createElement("div", { className: "slide__image-wrapper" },
+        React.createElement("img", {
+          className: "slide__image",
+          alt: headline,
+          src: src,
+          onLoad: this.imageLoaded })),
+  
+  
+  
+        React.createElement("article", { className: "slide__content" },
+        React.createElement("h2", { className: "slide__headline" }, headline),
+        React.createElement("button", { className: "slide__action btn" }, button))));
+  
+  
+  
+    }}
+  
+  
+  
+  // =========================
+  // Slider control
+  // =========================
+  
+  const SliderControl = ({ type, title, handleClick }) => {
+    return (
+      React.createElement("button", { className: `btn btn--${type}`, title: title, onClick: handleClick },
+      React.createElement("svg", { className: "icon", viewBox: "0 0 24 24" },
+      React.createElement("path", { d: "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" }))));
+  
+  
+  
+  };
+  
+  
+  // =========================
+  // Slider
+  // =========================
+  
+  class Slider extends React.Component {
+    constructor(props) {
+      super(props);
+  
+      this.state = { current: 0 };
+      this.handlePreviousClick = this.handlePreviousClick.bind(this);
+      this.handleNextClick = this.handleNextClick.bind(this);
+      this.handleSlideClick = this.handleSlideClick.bind(this);
+    }
+  
+    handlePreviousClick() {
+      const previous = this.state.current - 1;
+  
+      this.setState({
+        current: previous < 0 ?
+        this.props.slides.length - 1 :
+        previous });
+  
+    }
+  
+    handleNextClick() {
+      const next = this.state.current + 1;
+  
+      this.setState({
+        current: next === this.props.slides.length ?
+        0 :
+        next });
+  
+    }
+  
+    handleSlideClick(index) {
+      if (this.state.current !== index) {
+        this.setState({
+          current: index });
+  
+      }
+    }
+  
+    render() {
+      const { current, direction } = this.state;
+      const { slides, heading } = this.props;
+      const headingId = `slider-heading__${heading.replace(/\s+/g, '-').toLowerCase()}`;
+      const wrapperTransform = {
+        'transform': `translateX(-${current * (100 / slides.length)}%)` };
+  
+  
+      return (
+        React.createElement("div", { className: "slider", "aria-labelledby": headingId },
+        React.createElement("ul", { className: "slider__wrapper", style: wrapperTransform },
+        React.createElement("h3", { id: headingId, class: "visuallyhidden" }, heading),
+  
+        slides.map(slide => {
+          return (
+            React.createElement(Slide, {
+              key: slide.index,
+              slide: slide,
+              current: current,
+              handleSlideClick: this.handleSlideClick }));
+  
+  
+        })),
+  
+  
+        React.createElement("div", { className: "slider__controls" },
+        React.createElement(SliderControl, {
+          type: "previous",
+          title: "Go to previous slide",
+          handleClick: this.handlePreviousClick }),
+  
+  
+        React.createElement(SliderControl, {
+          type: "next",
+          title: "Go to next slide",
+          handleClick: this.handleNextClick }))));
+  
+  
+  
+  
+    }}
 
-SlideShow.init();
+  ReactDOM.render(React.createElement(Slider, { heading: "Example Slider", slides: slideData }), document.getElementById('app'));
