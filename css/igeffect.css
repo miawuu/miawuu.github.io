@@ -9,7 +9,6 @@
 .ieHeader{
     text-align: center;
     font-family: Poppins;
-    margin-bottom: 0px;
 }
 
 .ieHeader h1 {
@@ -40,11 +39,11 @@
 
 .ieCards .card{
     position: relative;
-    height: 450px;
+    height: 340px;
     width: 320px;
     border-radius: 20px;
     /* background: #ffffff; */
-    background-image: url("https://image.prntscr.com/image/KJVZ3JxDSIW-JR5RywNQhw.png");
+    /* background-image: url("/images/igeffect/1st-effect.png"); */
     background-repeat: no-repeat;
     box-shadow: 0 0px 20px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
 }
@@ -70,7 +69,8 @@
     width: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #AF72FE;
+    /* background-color: #AF72FE; */
+    background-image: linear-gradient(to right,rgb(89,84,202), #AF72FE);
     border-radius: 20px;
 }
 
@@ -83,12 +83,26 @@
     border-radius: 20px;
 }
 
+.ieCards h3 {
+    color: white;
+    font-size: 15px;
+    margin-top: 80px;
+    margin-left: 123px;
+    font-size: 20px;
+}
+
+.ieCards h4 {
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
 .ieCards .one .cardoneImg{
     width: 60px;
     position: absolute;
     border-radius: 20px;
-    top: 340px;
-    right: 240px;
+    top: 20px;
+    right: 130px;
 }
 
 .ieCards .two .cardtwoImg{
@@ -117,10 +131,6 @@
 .ieCards .cardContent span {
     color: #AF72FE;
     margin-left: 10px;
-}
-
-.ieCards .cardContent h3 {
-    color: white;
 }
 
 .ieCards .cardContent2 h2 {
@@ -153,7 +163,7 @@
 
     .igeffectSection{
         background-color: #131516;
-        height: 550px;
+        height: 650px;
         overflow-x: hidden;
     }
 
@@ -181,8 +191,8 @@
         width: 250px;
         border-radius: 20px;
         /* background: #181A1B; */
-        background-image: url("../images/igeffect/1st-effect.png");
-        background-size: 255px;
+        /* background-image: url("/images/igeffect/1st-effect.png"); */
+        background-size: 55px;
         background-repeat: no-repeat;
         box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
     }
@@ -200,7 +210,7 @@
     }
 
     .ieCards h1 {
-        color: #000000;
+        color: #ffffff;
         font-size: 20px;
         width: 100px;
         margin-top: 50px;
@@ -209,12 +219,25 @@
         border-radius: 20px;
     }
 
+    .ieCards h1:hover {
+        background-image: linear-gradient(to left,rgb(89,84,202), #AF72FE);
+        color: #ffffff;
+    }
+    
+    .ieCards h3 {
+        color: white;
+        font-size: 15px;
+        margin-top: 80px;
+        margin-left: 87px;
+        font-size: 20px;
+    }    
+
     .ieCards .one .cardoneImg{
-        width: 50px;
+        width: 60px;
         position: absolute;
         border-radius: 10px;
-        top: 250px;
-        right: 180px;
+        top: 20px;
+        right: 95px;
     }
 
     .ieCards .two .cardtwoImg{
@@ -230,7 +253,7 @@
         margin-bottom: 255px;
         margin-left: 180px;
         margin-right: 30px;
-        width: 40px;
+        width: 0px;
         color: #ffffff;
         background-color: #131516;
         justify-content: center;

@@ -108,12 +108,13 @@
 
 .cardContent .cardBtn{
     position: absolute;
+    bottom: 20px;
     right: 20px;
-    padding: 10px;
-    background-color: #ededed;
-    width: 25px;
-    height: 20px;
-    border-radius: 10px;
+    padding: 15px;
+    background-image: linear-gradient(to right,rgb(89,84,202), #AF72FE);
+    width: 50px;
+    height: 30px;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,53 +122,20 @@
 }
 
 .cardContent .cardBtn:hover{
-  background-color: #AF72FE;
-}
-
-.cardContent .cardBtn .cardIcon{
-    position: relative;
-    top:0px;
-    left:0px;
-    width: 16px;
-}
-
-.cardContent .cardBtn{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
-    background-color: #AF72FE;
-    width: 50px;
-    height: 30px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    transition: all ease-in-out 0.2s;
-}
-
-.cardContent .cardBtn:hover{
-  background-color: #ffffff;
-}
-
-.cardContent .cardBtn .cardIcon{
-    position: relative;
-    top:0px;
-    left:0px;
-    width: 16px;
+    background-image: linear-gradient(to left,rgb(89,84,202), #AF72FE);
 }
 
 /* RESPONSIVE */
 @media only screen and (max-width: 600px){
     .daSection{
-        width: auto;
-        height: auto;
+        height: 750px;
         margin-bottom: 100px;
         overflow-x: hidden;
     }
     
     .daHeader{
         text-align: center;
-        margin: 40px 0;
+        margin: 50px 0;
     }
     
     .daHeader h1 {
