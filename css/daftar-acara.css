@@ -2,8 +2,10 @@
 
 .daSection{
     background-color: #131516;
-    height: 600px;
+    height: 650px;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .daHeader{
@@ -16,7 +18,7 @@
     text-shadow: 0 5px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
     font-family: "Poppins", kindergarten;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .daHeader h2 {
@@ -35,6 +37,10 @@
     text-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
 }
 
+.daHeader h4 {
+    color: white;
+}
+
 .daHeader span {
     color: white;
     text-shadow: 0 3px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
@@ -48,6 +54,23 @@
     margin: 0 auto;
     position: relative;
     padding: 40px 0 40px 0;
+}
+
+.daSection button {
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #131516;
+    color: #fff;
+    padding: 10px;
+    font-family: Poppins;
+    box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+}
+
+.daSection h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .daCards .card{
@@ -128,7 +151,7 @@
 /* RESPONSIVE */
 @media only screen and (max-width: 600px){
     .daSection{
-        height: 750px;
+        height: 600px;
         margin-bottom: 100px;
         overflow-x: hidden;
     }
@@ -143,7 +166,7 @@
         text-shadow: 0 5px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
         font-family: "Poppins", kindergarten;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 35px;
     }
     
     .daHeader h3 {
