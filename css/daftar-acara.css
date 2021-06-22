@@ -67,13 +67,6 @@
 }
 
 .daSection button:hover {
-    border-radius: 10px;
-    font-size: 15px;
-    cursor: pointer;
-    background-color: #131516;
-    color: #fff;
-    padding: 10px;
-    font-family: Poppins;
     box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
 }
 
@@ -166,6 +159,20 @@
         overflow-x: hidden;
     }
     
+    .daSection button {
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: #131516;
+        color: #fff;
+        padding: 10px;
+        font-family: Poppins;
+    }
+    
+    .daSection button:hover {
+        box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09);
+    }
+
     .daHeader{
         text-align: center;
         margin: 50px 0;

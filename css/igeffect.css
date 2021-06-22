@@ -189,41 +189,41 @@
 
     .ieCards .card{
         position: relative;
-        height: 350px;
-        width: 250px;
+        height: 340px;
+        width: 320px;
         border-radius: 20px;
-        /* background: #181A1B; */
-        /* background-image: url("/images/igeffect/1st-effect.png"); */
-        background-size: 55px;
         background-repeat: no-repeat;
-        box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+        box-shadow: 0 0px 10px #000000, 0 20px 50px rgba(0,0,0,0.09)
     }
     
     .ieCards .card2{
         position: relative;
-        height: 350px;
-        width: 250px;
-        margin-top: 90px;
+        height: 450px;
+        width: 320px;
         border-radius: 20px;
         background: #181A1B;
         background-size: 255px;
         background-repeat: no-repeat;
         box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
     }
-
+    
+    .ieCards .card:hover{
+        box-shadow: 0 0px 20px #AF72FE, 0 20px 50px rgba(0,0,0,0.09)
+    }
+    
     .ieCards h1 {
         color: #ffffff;
-        font-size: 20px;
+        font-size: 18px;
         width: 100px;
         margin-top: 50px;
         margin-bottom: 50px;
-        background-color: #ffffff;
+        /* background-color: #AF72FE; */
+        box-shadow: 0 0px 10px #080808, 0 20px 50px rgb(8, 8, 8);
         border-radius: 20px;
     }
-
+    
     .ieCards h1:hover {
-        background-image: linear-gradient(to left,rgb(89,84,202), #AF72FE);
-        color: #ffffff;
+        box-shadow: 0 0px 10px #AF72FE, 0 20px 50px rgb(0, 0, 0)
     }
     
     .ieCards h3 {
